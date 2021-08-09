@@ -4,16 +4,19 @@
     src: url(fonts/Raleway-VariableFont_wght.ttf);
 }
 
+
 body {
     font-family: Raleway;
 }
+
+
 header {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     block-size: 50px;
-    margin: 1.5rem;;
+    margin: 1.5rem;
 }
 
 header img {
@@ -24,26 +27,75 @@ header ul {
     display: flex;
     list-style-type: none;
     padding-left: 0%;
-}
+ }
 
 header ul li {
     color: #0065FC;
+    font-size: 12px;
     font-weight: bold;
 }
 
 header ul li a {
     text-decoration: none;
-    padding-right: 3rem;
+    padding-right: 2rem;
     color: #0065FC;
+    font-size: 12px;
     font-weight: bold;
 }
+
 
 .recherche h1 {
-    font-weight: bold;
+    margin: 0 0 0.5rem 1.5rem;
+    font-size: 18px;
+}
+
+.recherche p{
+    margin: 0 0 0.5rem 1.5rem;
+    font-size: 13px;
 }
 
 
+.search-input {
+    position: relative;
+    display: flex;
+    margin-left: 1.5rem;
+}
 
+.search-input input{
+    border: 1px solid #F2F2F2;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.search-input input[type=text]{
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.search-input input:focus{
+    outline:none;
+}
+
+.search-input i{
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    margin-left: -1px;
+    font-size: 12px;
+    background-color:#F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.search-input button{
+    display: flex;
+    align-items: center;
+    background-color: #0065FC;
+    font-family: Raleway;
+    color: white;
+    border: 1px solid #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -5px;
+}
 
 
 .filtres {
@@ -59,30 +111,37 @@ header ul li a {
 }
 
 .filtres p {
-    font-weight: bold;
+    font-weight: 900;
     margin-left: 1.5rem;
+    font-size: 16px;
 }
 
 .filtres li {
     display: flex;
+    position: relative;
     align-items: center;
-    border: 3px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 50px;
-    padding: 0rem;
+    padding: 4px 1rem 4px 2.5rem;
     margin-left: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 16px;
     }
 
 .filtres li:hover {
     background-color:#DEEBFF;
 }
+
 .filtres i {
+    font-size: 12px;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     border-radius: 20px;
     background: #DEEBFF;
     color: #0065FC;
+    left: 0px;
 }
