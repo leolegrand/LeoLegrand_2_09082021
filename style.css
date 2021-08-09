@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Raleway;
+}
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    block-size: 50px;
+    margin: 1.5rem;;
+}
+
+header img {
+    block-size: 40px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+header ul li {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding-right: 3rem;
+    color: #0065FC;
+    font-weight: bold;
+}
