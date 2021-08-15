@@ -261,6 +261,8 @@ header a:hover{
     height: 153px;
     width: 25%;
     margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
 }
 
 .hotel-cards img{
@@ -340,6 +342,8 @@ header a:hover{
     align-content: flex-start;
     margin: 10px;
     padding: 4px;
+    text-decoration: none;
+    color: black;
 }
 
 .populaires-cards img{
@@ -413,6 +417,8 @@ header a:hover{
 }
 
 .activites-cards-40 {
+    text-decoration: none;
+    color: black;
     border-radius: 20px 20px 20px 20px;
     height: 35%;
     width: 100%;
@@ -427,6 +433,8 @@ header a:hover{
 }
 
 .activites-cards-50{
+    text-decoration: none;
+    color: black;
     border-radius: 20px 20px 20px 20px;
     height: 45%;
     width: 100%;
@@ -441,6 +449,8 @@ header a:hover{
 }
 
 .activites-cards-60{
+    text-decoration: none;
+    color: black;
     border-radius: 20px 20px 20px 20px;
     height: 55%;
     width: 100%;
@@ -455,6 +465,8 @@ header a:hover{
 }
 
 .activites-cards-100{
+    text-decoration: none;
+    color: black;
     border-radius: 20px 20px 20px 20px;
     height: 100%;
     width: 100%;
