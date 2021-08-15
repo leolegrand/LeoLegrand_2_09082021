@@ -38,19 +38,21 @@ header ul {
 
 header ul li {
     color: #0065FC;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
-}
-
-header ul li a {
-    text-decoration: none;
     padding-right: 2rem;
-    color: #0065FC;
-    font-size: 12px;
-    font-weight: bold;
 }
 
+header a {
+    color: #7a7a7a;
+    text-decoration: none;
+    padding-top: 20px;
+}
 
+header a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
 
 /* Titre et sous-titre de l'index */
 
@@ -150,6 +152,7 @@ header ul li a {
 
 .filtres li:hover {
     background-color:#DEEBFF;
+    transition-duration: 1s;
 }
 
 .filtres i {
@@ -222,13 +225,15 @@ header ul li a {
 /* Hôtels */
 
 .hotels {
-    width: 65%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
     background-color:#F2F2F2;
     border-radius: 20px 20px 20px 20px;
     margin-right: 10px;
 }
 .hotels h2{
-    padding-left: 23px;
+    padding-left: 43px;
     margin-top: 20px;
     font-size: 18px;
 }
@@ -236,7 +241,7 @@ header ul li a {
 .hotels h4{
     font-size: 14px;
     font-weight: bold;
-    padding-left: 23px;
+    padding-left: 43px;
 }
 
 
@@ -250,6 +255,7 @@ header ul li a {
 }
 
 .hotel-cards{
+    box-shadow: 0px 4px 20px -7px #5d5d5d;
     background-color: white;
     padding: 4px;
     border-radius: 20px 20px 20px 20px;
@@ -291,7 +297,7 @@ header ul li a {
 /* Populaires */
 
 .populaires{
-    width: 35%;
+    width: 30%;
     background-color:#F2F2F2;
     border-radius: 20px 20px 20px 20px;
     display: flex;
@@ -303,7 +309,6 @@ header ul li a {
 }
 
 .populaires h2{
-    padding-left: 15px;
     font-size: 18px;
     margin: 0;
 }
@@ -323,6 +328,7 @@ header ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .populaires-cards{
@@ -330,6 +336,7 @@ header ul li a {
     height: 115px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 4px 20px -7px #808080; 
     display: flex;
     align-content: flex-start;
     margin: 10px;
@@ -344,8 +351,7 @@ header ul li a {
 }
 
 .populaires-cards-contents{
-
-width: 70%
+    width: 70%
 }
 
 .populaires-cards h3, .populaires-cards p{
@@ -367,54 +373,140 @@ width: 70%
 
 
 
+/* Section Activités à Marseilles */
 
 .activites{
+    position: relative;
     display: flex;
     align-items: center;
-justify-content: space-between;
-height: 470px;
-width: 100%;
-margin-top: 30px;
-margin-left: auto;
-margin-right: auto;
+    justify-content: space-between;
+    height: 470px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activites-title{
+    position: absolute;
+    top: -23px;
+    left: 0;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
-.activites-cards-main{
-display: flex;
-}
+
+/* Cartes Activités à Marseilles */
+
 .activites-cards-section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 400px;
     width: 23%;
+}
 
+.activites-cards-section h3{
+    margin: 0;
+    font-size: 13px;
+    margin: 5px 20px 10px 20px;
+}
 
+.activites-cards-40 {
+    border-radius: 20px 20px 20px 20px;
+    height: 35%;
+    width: 100;
+    box-shadow: 0px 4px 20px -7px #AEAEAE;
+}
+
+.activites-cards-40 img{
+    height: 72%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .activites-cards-50{
-background-color: blue;
-border-radius: 20px 20px 20px 20px;
-height: 45%;
-width: 100;
+    border-radius: 20px 20px 20px 20px;
+    height: 45%;
+    width: 100;
+    box-shadow: 0px 4px 20px -7px #AEAEAE;
+}
+
+.activites-cards-50 img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activites-cards-60{
+    border-radius: 20px 20px 20px 20px;
+    height: 55%;
+    width: 100;
+    box-shadow: 0px 4px 20px -7px #AEAEAE;
+}
+
+.activites-cards-60 img{
+    height: 82%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .activites-cards-100{
-    background-color: blue;
     border-radius: 20px 20px 20px 20px;
     height: 100%;
     width: 100;
+    box-shadow: 0px 4px 20px -7px #AEAEAE;
     }
+    
+.activites-cards-100 img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+/* Footer */
 
 footer{
-    height: 100px;
-    background-color: red;
-    width: auto;
+    display: flex;
+    background-color: #F2F2F2;
     margin-left: -20px;
     margin-right: -20px;
     margin-top: 40px;
+    padding-top: 50px;
 }
+
+.footer-section{
+    margin-left: 50px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3{
+    font-size: 14px;
+    margin: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+footer li{
+    padding: 4px 0px;
+}
+
+
+
+/* Media Queries */
 
 @media (min-width: 1440px) {
 
@@ -422,3 +514,4 @@ footer{
       margin-left: 200px;
       margin-right: 200px;
     }
+  }
