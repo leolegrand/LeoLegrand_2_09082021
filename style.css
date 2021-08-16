@@ -1,9 +1,10 @@
 @font-face {
     font-family: Raleway;
-    src: url(fonts/Raleway-Italic-VariableFont_wght.ttf);
     src: url(fonts/Raleway-VariableFont_wght.ttf);
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: normal;
 }
-
 
 body {
     font-family: Raleway;
@@ -15,7 +16,8 @@ body {
 
 /* Logo et barre de navigation */
 
-header {
+.header-navbar{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -29,17 +31,28 @@ header img {
     block-size: 50px;
 }
 
+header p{
+    position:absolute;
+    top: 26px;
+    right: 20px;
+    color: #0065FC;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
 header ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    padding-left: 0%;
+    margin-right: 44px;
  }
 
 header ul li {
     color: #0065FC;
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 600;
     padding-right: 2rem;
 }
 
@@ -58,7 +71,7 @@ header a:hover{
 
 .recherche h1 {
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
     margin: 0 0 10px 0;
 }
 
@@ -74,6 +87,7 @@ header a:hover{
  .search-input {
     position: relative;
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -87,6 +101,7 @@ header a:hover{
 .search-input input[type=text]{
     padding-left: 40px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .search-input input:focus{
@@ -98,14 +113,17 @@ header a:hover{
     position: absolute;
     padding: 10px;
     margin-left: -1px;
-    font-size: 12px;
+    height: 20px;
+    font-size: 14px;
     background-color:#F2F2F2;
     border-radius: 10px 0px 0px 10px;
+    align-items: center;
 }
 
 .search-input button{
     display: flex;
     align-items: center;
+    height: 38.4px;
     background-color: #0065FC;
     font-family: Raleway;
     color: white;
@@ -113,6 +131,8 @@ header a:hover{
     border-radius: 0px 10px 10px 0px;
     margin-left: -5px;
     font-size: 12px;
+    font-weight: 600;
+
 }
 
 
@@ -519,10 +539,112 @@ footer li{
 
 /* Media Queries */
 
+@media (max-width: 435px) {
+
+    header{
+        margin-bottom: 80px;
+        margin-right: 0;
+    }
+
+    header p{
+        font-size: 14px;
+    }
+    
+    header ul{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+       display: flex;
+       flex-wrap: nowrap;
+       width: 100%;
+       margin-top: 25px;
+    }
+    
+    .navbar a {
+        padding-bottom: 10px;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .navbar ul{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar li {
+        padding: 0;
+        padding-bottom: 20px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .navbar li:hover {
+        border-bottom: 2px solid #0065FC;
+        border-top: 0px;
+    }
+
+    .navbar a:hover{
+        border-top: 0;
+    }
+
+    .search-input .fa-search {
+        background-color: #0065FC;
+        border-radius: 8px;
+        margin-left: -15px;
+        font-size: 16px;
+        height: 18px;
+    }
+
+    .rechercher{
+        display: none;
+    }
+
+    .search-input input[type=text]{
+        padding-left: 40px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .search-input .fa-map-marker-alt{
+        height: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 436px) {
+    .search-input i.fas.fa-search {
+        display: none;
+    }
+}
+
 @media (min-width: 1440px) {
 
     body {
       margin-left: 200px;
       margin-right: 200px;
     }
-  }
+ }
+
+@media (min-width: 1700px) {
+
+    body {
+        margin-left: 300px;
+        margin-right: 300px;
+      }   
+}
+
+@media (min-width: 2560px) {
+
+    body {
+        margin-left: 600px;
+        margin-right: 600px;
+      }   
+}
