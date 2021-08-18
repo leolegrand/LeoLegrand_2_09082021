@@ -97,7 +97,6 @@ header a:hover{
 
 .search-input input{
     border: 1px solid #F2F2F2;
-    border-radius: 10px 10px 10px 10px;
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
@@ -113,7 +112,6 @@ header a:hover{
 
 .search-input i{
     display: flex;
-    position: absolute;
     padding: 10px;
     margin-left: -1px;
     height: 20px;
@@ -525,7 +523,7 @@ footer{
 .footer-section{
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 200px;
     margin-left: 20px;
 }
 
@@ -558,8 +556,7 @@ footer li{
     }
     header{
         margin-bottom: 80px;
-        margin-left: 20px;
-        margin-right: 20px;
+
     }
 
     header p{
