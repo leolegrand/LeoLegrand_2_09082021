@@ -682,7 +682,7 @@ footer li{
 
     .activites{
         flex-direction: column;
-        margin-bottom: 700px;
+        height: auto;
     }
 
     .activites-title{
@@ -692,6 +692,7 @@ footer li{
     }
     .activites-cards-section{
         width: 80%;
+        height: auto;
     }
 
     .activites-cards-section h3{
@@ -887,7 +888,8 @@ footer li{
     }
 
     .activites{
-        flex-direction: column;    
+        flex-direction: column; 
+        height: auto;
     }
 
     .activites-title{
@@ -897,6 +899,7 @@ footer li{
     }
     .activites-cards-section{
         width: 80%;
+        height: auto;
     }
 
 
