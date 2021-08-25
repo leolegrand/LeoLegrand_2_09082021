@@ -887,8 +887,7 @@ footer li{
     }
 
     .activites{
-        flex-direction: column;
-        margin-bottom: 700px;
+        flex-direction: column;    
     }
 
     .activites-title{
